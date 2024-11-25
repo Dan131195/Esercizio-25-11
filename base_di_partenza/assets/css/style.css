@@ -201,7 +201,15 @@ footer a {
   color: fuchsia;
 }
 
-/* --------- SCHERMI DA 992 PX --------- */
+/*--------------  LOGO HTML5  --------------------*/
+
+article img {
+    border: 5px solid rgb(23, 138, 247);
+    outline: 5px solid red;
+    padding: 5px;
+}
+
+/* ---------   SCHERMI DA 992 PX   --------- */
 
 @media screen and (min-width: 992px) {
   table {
@@ -216,7 +224,7 @@ footer a {
   }
 }
 
-/* --------- SCHERMI DA 1200 PX --------- */
+/* ---------   SCHERMI DA 1200 PX   --------- */
 
 @media screen and (min-width: 1200px) {
   body {
@@ -240,7 +248,7 @@ footer a {
     align-items: center;
   }
   header p {
-    margin: 0 0 0 20px;
+    margin: 0 20px;
   }
   header div img {
     width: 30%;
@@ -288,5 +296,9 @@ footer a {
     }
     header, footer, iframe, main article section, aside {
         display: none;
+    }
+    article img {
+        float: left;
+        margin-right: 10px;
     }
 }
