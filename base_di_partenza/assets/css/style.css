@@ -206,7 +206,7 @@ footer a {
 @media screen and (min-width: 992px) {
   table {
     margin: 3em auto;
-    width: 60%;
+    width: 50%;
   }
   article h2 {
     font-weight: bold;
