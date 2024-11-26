@@ -78,7 +78,7 @@ section h2 {
 
 /* ELEMENTI NEL MAIN - ARTICLE */
 h1 {
-  font-size: 2.6rem;
+  font-size: 5rem;
   font-weight: bold;
   letter-spacing: -0.03em;
   margin-bottom: 0.7em;
@@ -201,12 +201,111 @@ footer a {
   color: fuchsia;
 }
 
-/*--------------  LOGO HTML5  --------------------*/
+/* --------------  ESERCIZIO -------------------- */
 
-article img {
-    border: 5px solid rgb(23, 138, 247);
-    outline: 5px solid red;
-    padding: 5px;
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+h1 span {
+  position: relative;
+  z-index: 2;
+}
+
+#underline {
+  position: absolute;
+  top: 55px;
+  left: 0px;
+  filter: opacity(50%);
+  z-index: 1;
+  width: 100%;
+}
+
+iframe,
+section {
+  margin-top: 20px;
+}
+
+section h2 {
+  margin-top: -30px;
+  margin-bottom: 10px;
+  background-color: rgb(138, 138, 138);
+  padding: 5px;
+  width: 8em;
+}
+
+aside div {
+  position: relative;
+  z-index: 1;
+}
+
+.fa-tag {
+  color: rgb(138, 138, 138);
+  font-size: 3em;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.fa-2xl {
+  border-radius: 5px;
+  margin-top: 24px;
+}
+
+.blue {
+  color: blue;
+}
+
+.red {
+  color: red;
+}
+
+.button {
+  border: 2px solid white;
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  margin: 10px 0;
+  border-radius: 10px;
+  position: fixed;
+  right: 5px;
+  z-index: 10000;
+}
+
+#plus {
+  bottom: 120px;
+}
+
+#calendar {
+  bottom: 60px;
+}
+
+#goUp {
+  bottom: 1px;
+}
+
+/* --------------  LOGO HTML5  -------------------- */
+
+#html {
+  border: 5px solid rgb(23, 138, 247);
+  outline: 5px solid red;
+  padding: 5px;
+  float: left;
+  margin-right: 10px;
+}
+
+/* ---------   SCHERMI DA 700 PX   --------- */
+
+@media screen and (min-width: 700px) {
+  #plus {
+    top: 10px;
+  }
+  #calendar {
+    top: 75px;
+  }
 }
 
 /* ---------   SCHERMI DA 992 PX   --------- */
@@ -266,12 +365,12 @@ article img {
   main article section {
     display: inline-block;
     border-radius: 20px;
-    
   }
   iframe {
     float: left;
   }
-  iframe, main article section {
+  iframe,
+  main article section {
     width: 50%;
     height: 30vh;
   }
@@ -284,21 +383,20 @@ article img {
     margin: 10px 0;
   }
 }
-
 /* --------- STAMPA --------- */
 
 @media print {
-    body {
-        background: none;
-    }
-    main {
-        box-shadow: none;
-    }
-    header, footer, iframe, main article section, aside {
-        display: none;
-    }
-    article img {
-        float: left;
-        margin-right: 10px;
-    }
+  body {
+    background: none;
+  }
+  main {
+    box-shadow: none;
+  }
+  header,
+  footer,
+  iframe,
+  main article section,
+  aside {
+    display: none;
+  }
 }
