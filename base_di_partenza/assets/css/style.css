@@ -223,17 +223,22 @@ h1 span {
   width: 100%;
 }
 
-iframe,
 section {
-  margin-top: 20px;
+  position: relative;
+  z-index: 1;
 }
 
 section h2 {
-  margin-top: -30px;
-  margin-bottom: 10px;
+  position: absolute;
+  top: -10px;
+  z-index: 1;
+  margin-bottom: 20px;
   background-color: rgb(138, 138, 138);
   padding: 5px;
   width: 8em;
+}
+section p {
+  margin-top: 30px;
 }
 
 aside div {
